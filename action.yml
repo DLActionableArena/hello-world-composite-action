@@ -29,12 +29,7 @@ runs:
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
         
-    - name: Execute script
+    - name: Run goodbye.sh
+      run: ./goodbye.sh
       shell: bash
-      run: |
-        chmod +x ./goodbye.sh
-        ./goodbye.sh
-#    - name: Run goodbye.sh
-#      run: goodbye.sh
-#      shell: bash
 
